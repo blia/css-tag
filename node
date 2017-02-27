@@ -1,0 +1,61 @@
+
+const css = (type, props, children) => {
+  console.log(type);
+};
+
+console.log('123344');
+
+const props = {
+  active: false
+};
+
+const pos = 'absolute';
+
+const testCss = css('rule', null, [css('decl', {
+  display: 'flex'
+}), css('decl', {
+  rect: '10px'
+}), css('decl', {
+  color: props.active ? blue : 'red'
+}), css('decl', {
+  backgroundPosition: pos
+}), css('decl', {
+  rect: '10px 20px'
+})]);
+
+const testSheet = css('sheet', null, [css('rule', {
+  selector: '.test-node'
+}, [css('decl', {
+  display: 'flex'
+}), css('decl', {
+  rect: '10px'
+}), css('decl', {
+  color: props.active ? blue : 'red'
+}), css('decl', {
+  backgroundPosition: pos
+}), css('decl', {
+  rect: '10px 20px'
+}), css('rule', {
+  selector: '&:hover'
+}, [css('decl', {
+  color: 'black'
+})])])]);
+
+const testSheet2 = css('sheet', null, [css('rule', {
+  selector: '.test-node'
+}, [css('decl', {
+  display: 'flex'
+}), css('decl', {
+  rect: '10px'
+}), css('decl', {
+  color: props.active ? blue : 'red'
+}), css('decl', {
+  backgroundPosition: pos
+}), css('decl', {
+  rect: '10px 20px'
+}), css('rule', {
+  selector: '&:hover'
+}, [css('decl', {
+  color: 'black'
+})])])]);
+
