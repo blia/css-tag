@@ -1,4 +1,0 @@
-{
-  "plugins": ["babel-plugin-transform-css-tag", "babel-plugin-syntax-object-rest-spread"],
-  "presets": ["env"]
-}
