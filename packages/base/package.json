@@ -1,6 +1,6 @@
 {
   "name": "css-tag-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Style html easy",
   "main": "lib/index.js",
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-plugin-transform-css-tag": "^0.0.1",
+    "babel-plugin-transform-css-tag": "^0.0.2",
     "babel-preset-env": "^1.1.10"
   }
 }
