@@ -1,0 +1,34 @@
+{
+  "name": "css-tag",
+  "version": "0.0.1",
+  "description": "Style html easy",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "babel-node tests/babel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blia/css-tag.git"
+  },
+  "keywords": [
+    "css",
+    "css-to-js"
+  ],
+  "author": "Kirill Yakovenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blia/css-tag/issues"
+  },
+  "homepage": "https://github.com/blia/css-tag#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-css": "github:blia/babel-plugin-transform-css-tag"
+  },
+  "dependencies": {
+    "camel-case": "^3.0.0",
+    "param-case": "^2.1.0"
+  }
+}
