@@ -12,13 +12,12 @@
     "css-in-js"
   ],
   "scripts": {
-    "test": "babel-node tests/babel.js"
+    "test": "node tests/index.js"
   },
   "devDependencies": {
-    "babel-plugin-transform-css-tag": "0.0.1"
-  },
-  "dependencies": {
-    "camel-case": "^3.0.0",
-    "param-case": "^2.1.0"
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-css-tag": "0.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.1.10"
   }
 }
