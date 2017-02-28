@@ -21,7 +21,7 @@ export class Transformer {
   }
 
   rule(props, children) {
-    return props.selector
+    return props && props.selector
      ? {[this.selector(props.selector)]: Object.assign.apply(null, children)}
      : Object.assign.apply(null, children);
   }
