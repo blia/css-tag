@@ -1,9 +1,9 @@
-# csstag
+# csstag-base
 
 ## Installation
 
 ```sh
-$ npm install csstag babel-plugin-transform-csstag babel-preset-env
+$ npm install csstag-base babel-plugin-transform-csstag babel-preset-env
 ```
 
 ## Set up babel
@@ -20,7 +20,7 @@ $ npm install csstag babel-plugin-transform-csstag babel-preset-env
 ## Example
 
 ```js
-import css from 'css-tag-base';
+import css from 'csstag-base';
 
 const pos = 'absolute';
 
