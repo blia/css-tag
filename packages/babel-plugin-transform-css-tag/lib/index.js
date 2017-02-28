@@ -37,7 +37,7 @@ const _ = {
   }
 }
 
-exports.default = function ({types: t}) {
+module.exports = function ({types: t}) {
   return {
     visitor: {
       TaggedTemplateExpression(path) {
@@ -79,6 +79,4 @@ exports.default = function ({types: t}) {
       }
     }
   };
-}
-
-module.exports = exports["default"];
+};

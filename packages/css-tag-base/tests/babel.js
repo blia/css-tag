@@ -1,4 +1,4 @@
-const css = require('../lib').default;
+// const css = require('../lib').default;
 
 css.addDeclarations({
   rect(val) {

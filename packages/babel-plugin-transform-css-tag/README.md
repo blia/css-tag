@@ -5,7 +5,7 @@ Compile css template strings to function tree
 ## Installation
 
 ```sh
-$ npm install blia/babel-plugin-transform-css-tag
+$ npm install babel-plugin-transform-css-tag
 ```
 
 ## Usage

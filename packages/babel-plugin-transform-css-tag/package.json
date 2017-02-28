@@ -2,28 +2,26 @@
   "name": "babel-plugin-transform-css-tag",
   "version": "0.0.1",
   "description": "Compile css template strings to functions tree",
+  "repository": "https://github.com/blia/css-tag/tree/master/packages/babel-plugin-transform-css-tag",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blia/babel-plugin-transform-css-tag.git"
-  },
   "keywords": [
-    "css",
+    "babel-pugin",
+    "css-tag",
     "css-to-js",
     "css-in-js"
   ],
-  "author": "Kirill Yakovenko",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/blia/babel-plugin-transform-css-tag/issues"
+  "scripts": {
+    "test": "node tests/index.js"
   },
-  "homepage": "https://github.com/blia/babel-plugin-transform-css-tag#readme",
+  "license": "MIT",
   "dependencies": {
     "camel-case": "^3.0.0",
     "node-uuid": "^1.4.7",
     "postcss": "^5.2.15"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "chalk": "^1.1.3",
+    "diff": "^3.2.0"
   }
 }

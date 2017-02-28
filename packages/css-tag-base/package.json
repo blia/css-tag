@@ -1,13 +1,10 @@
 {
-  "name": "css-tag",
+  "name": "css-tag-base",
   "version": "0.0.1",
   "description": "Style html easy",
   "main": "lib/index.js",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blia/css-tag.git"
-  },
+  "repository": "https://github.com/blia/css-tag/tree/master/packages/css-tag-base",
   "keywords": [
     "css",
     "css-tag",
@@ -18,7 +15,10 @@
     "test": "babel-node tests/babel.js"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "lerna": "2.0.0-beta.37"
+    "babel-plugin-transform-css-tag": "0.0.1",
+  },
+  "dependencies": {
+    "camel-case": "^3.0.0",
+    "param-case": "^2.1.0"
   }
 }
