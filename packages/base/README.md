@@ -12,7 +12,7 @@ $ npm install csstag-base babel-plugin-transform-csstag babel-preset-env
 
 ```json
 {
-  "plugins": ["babel-plugin-transform-css-tag"],
+  "plugins": ["babel-plugin-transform-csstag"],
   "presets": ["env"]
 }
 ```
