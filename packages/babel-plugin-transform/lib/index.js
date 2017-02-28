@@ -1,8 +1,7 @@
 "use strict";
 
 const postcss = require('postcss');
-const uuid = require('node-uuid');
-const toCamel = require('camel-case');
+const uuid = require('uuid');
 
 exports.__esModule = true;
 
@@ -15,7 +14,7 @@ const _ = {
       return t.callExpression(t.identifier('css'), [
         t.stringLiteral('decl'),
         t.objectExpression([
-          t.objectProperty(t.identifier('prop'), t.stringLiteral(toCamel(prop))),
+          t.objectProperty(t.identifier('prop'), t.stringLiteral(prop)),
           t.objectProperty(t.identifier('value'), value === placeholder ? expressions.shift() : t.stringLiteral(value))
         ])
       ]);

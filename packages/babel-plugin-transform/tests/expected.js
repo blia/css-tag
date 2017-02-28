@@ -13,17 +13,17 @@ const testSheet = css('sheet', null, [css('rule', {
   prop: 'color',
   value: props.active ? 'blue' : 'red'
 }), css('decl', {
-  prop: 'backgroundPosition',
+  prop: 'background-position',
   value: pos
 }), css('decl', {
-  prop: 'activeColor',
+  prop: 'active-color',
   value: 'red'
 }), css('rule', {
   selector: '&:hover'
 }, [css('decl', {
-  prop: 'textDecoration',
+  prop: 'text-decoration',
   value: 'underline'
 }), css('decl', {
-  prop: 'activeColor',
+  prop: 'active-color',
   value: 'black'
 })])])]);
