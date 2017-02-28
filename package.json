@@ -25,7 +25,8 @@
   "homepage": "https://github.com/blia/css-tag#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-plugin-transform-css": "github:blia/babel-plugin-transform-css-tag"
+    "babel-plugin-transform-css": "github:blia/babel-plugin-transform-css-tag",
+    "lerna": "2.0.0-beta.37"
   },
   "dependencies": {
     "camel-case": "^3.0.0",
