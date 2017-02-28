@@ -1,8 +1,8 @@
 {
-  "name": "css-tag-base",
+  "name": "csstag-base",
   "version": "0.0.3",
   "description": "Style html easy",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "repository": "https://github.com/blia/css-tag/tree/master/packages/base",
   "keywords": [
