@@ -12,7 +12,7 @@
     "css-in-js"
   ],
   "scripts": {
-    "test": "node tests/index.js"
+    "test": "babel-node tests/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

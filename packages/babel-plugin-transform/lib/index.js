@@ -51,30 +51,32 @@ module.exports = function ({types: t}) {
         const root = postcss.parse(css);
         const rootRules = root.nodes.filter(r => r.type === 'rule');
         const rootDecls = root.nodes.filter(r => r.type === 'decl');
-
-        let ast = null;
+        let decls = [];
+        let rules = [];
         let func = null;
 
-        if (rootRules.length) {
-          ast = _.rule(t, rootRules, expressions);
-          func = t.expressionStatement(t.callExpression(t.identifier('css'), [
-            t.stringLiteral('sheet'),
-            t.nullLiteral(),
-            t.arrayExpression(ast)
-          ]));
-        } else if(rootDecls.length) {
-          ast = _.decl(t, rootDecls, expressions);
+        if(rootDecls.length) {
+          decls = _.decl(t, rootDecls, expressions);
+        }
+        if(rootRules.length) {
+          rules = _.rule(t, rootRules, expressions);
+        }
+
+        if (decls.length) {
           func = t.expressionStatement(t.callExpression(t.identifier('css'), [
             t.stringLiteral('rule'),
             t.nullLiteral(),
-            t.arrayExpression(ast)
+            t.arrayExpression([].concat(decls, rules))
           ]));
         } else {
-          // throw error
+          func = t.expressionStatement(t.callExpression(t.identifier('css'), [
+            t.stringLiteral('sheet'),
+            t.nullLiteral(),
+            t.arrayExpression([].concat(decls, rules))
+          ]));
         }
 
         path.replaceWith(func);
-
       }
     }
   };
