@@ -1,6 +1,6 @@
 {
   "name": "csstag-base",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Style html easy",
   "main": "src/index.js",
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-plugin-transform-csstag": "^0.0.3",
+    "babel-plugin-transform-csstag": "^0.0.4",
     "babel-preset-env": "^1.1.10"
   }
 }
