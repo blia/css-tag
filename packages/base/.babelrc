@@ -1,4 +1,4 @@
 {
-  "plugins": ["babel-plugin-transform-css-tag"],
+  "plugins": ["babel-plugin-transform-csstag"],
   "presets": ["env"]
 }
