@@ -13,21 +13,19 @@ const testSheet = css`
   }
 `;
 
-const testSheet2 = {
-  testNode: css`
+const testNode = css`
   display: flex;
   background-position: ${pos};
   color: ${props => props.color || 'red'};
   &:hover {
     text-decoration: underline;
-  }`
-}
+  }`;
 
 const ctx = {
   color: 'blue'
 }
 
 console.log(testSheet());
-console.log(testSheet2.testNode());
+console.log(testNode());
 console.log(testSheet(ctx));
-console.log(testSheet2.testNode(ctx));
+console.log(testNode(ctx));
