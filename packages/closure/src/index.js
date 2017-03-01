@@ -6,6 +6,4 @@ export function css (...args) {
   return transformer.transform(...args);
 }
 
-css.Transformer = Transformer;
-
 export default css;

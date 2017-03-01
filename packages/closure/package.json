@@ -1,0 +1,23 @@
+{
+  "name": "csstag-closure",
+  "version": "0.0.0",
+  "description": "Advanced transformer based on csstag-base",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": "https://github.com/blia/css-tag/tree/master/packages/closure",
+  "keywords": [
+    "css",
+    "css-tag",
+    "css-to-js",
+    "css-in-js"
+  ],
+  "scripts": {
+    "test": "babel-node tests/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-csstag": "^0.0.4",
+    "babel-preset-env": "^1.1.10",
+    "csstag-base": "^0.0.1"
+  }
+}
