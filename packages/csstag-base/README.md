@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-$ npm install csstag-base babel-plugin-transform-csstag babel-preset-env
+$ npm install csstag-base babel-plugin-transform-csstag
 ```
 
 ## Set up babel
@@ -12,22 +12,21 @@ $ npm install csstag-base babel-plugin-transform-csstag babel-preset-env
 
 ```json
 {
-  "plugins": ["babel-plugin-transform-csstag"],
-  "presets": ["env"]
+  "plugins": ["babel-plugin-transform-csstag"]
 }
 ```
 
 ## Example
 
 ```js
-import css from 'csstag-base';
+const {css} = require('csstag-base');
 
-const pos = 'absolute';
+const position = 'absolute';
 
 const testSheet = css`
   .test-node {
     display: flex;
-    background-position: ${pos};
+    background-position: ${position};
     &:hover {
       text-decoration: underline;
     }

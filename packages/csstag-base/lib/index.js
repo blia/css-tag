@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.css = css;
+exports.Transformer = undefined;
 
 var _transformer = require('./transformer');
 
@@ -17,4 +17,5 @@ function css() {
   return transformer.transform.apply(transformer, arguments);
 }
 
+exports.Transformer = _transformer2.default;
 exports.default = css;

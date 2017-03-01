@@ -1,8 +1,5 @@
 
-export class Transformer {
-  constructor() {
-
-  }
+class Transformer {
 
   prop(prop) {
     return prop;
@@ -12,7 +9,7 @@ export class Transformer {
     return value;
   }
 
-  declaration({prop, value}, children) {
+  declaration({prop, value}) {
     return {[this.prop(prop)]: this.value(value)};
   }
 
@@ -22,12 +19,12 @@ export class Transformer {
 
   rule(props, children) {
     return props && props.selector
-     ? {[this.selector(props.selector)]: Object.assign.apply(null, children)}
-     : Object.assign.apply(null, children);
+     ? {[this.selector(props.selector)]: Object.assign(...children)}
+     : Object.assign(...children);
   }
 
   sheet(props, children) {
-    return Object.assign.apply(null, children);
+    return Object.assign(...children);
   }
 
   transform(type, props, children) {

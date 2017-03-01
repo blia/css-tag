@@ -65,5 +65,4 @@ var Transformer = function () {
   return Transformer;
 }();
 
-exports.Transformer = Transformer;
 exports.default = Transformer;
