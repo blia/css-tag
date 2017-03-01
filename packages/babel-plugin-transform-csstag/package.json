@@ -1,8 +1,8 @@
 {
-  "name": "babel-plugin-transform-css-tag",
+  "name": "babel-plugin-transform-csstag",
   "version": "0.0.1",
   "description": "Compile css template strings to functions tree",
-  "repository": "https://github.com/blia/css-tag/tree/master/packages/babel-plugin-transform",
+  "repository": "https://github.com/blia/css-tag/tree/master/packages/babel-plugin-transform-csstag",
   "main": "lib/index.js",
   "keywords": [
     "babel-pugin",

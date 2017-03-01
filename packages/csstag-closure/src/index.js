@@ -2,10 +2,12 @@ import Transformer from './transformer';
 
 const transformer = new Transformer();
 
-export function css (...args) {
+function css (...args) {
   return transformer.transform(...args);
 }
 
-css.Transformer = Transformer;
+export {
+  Transformer
+};
 
 export default css;
