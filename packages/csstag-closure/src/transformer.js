@@ -16,8 +16,8 @@ class TransformerClosure extends Transformer {
   }
 
   rule(props, children) {
-    return ctx => props && props.selector
-     ? {[this.selector(props.selector)]: this.render(ctx, children)}
+    return ctx => props && (props.tagName || props.className || props.statusName)
+     ? {[this.selector(props)]: this.render(ctx, children)}
      : this.render(ctx, children);
   }
 

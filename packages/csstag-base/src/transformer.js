@@ -45,7 +45,7 @@ class Transformer {
   }
 
   transform(type, props, children) {
-    // console.log(type, props);
+    console.log(type, props);
     switch (type) {
       case 'sheet':
         return this.sheet(props, children);

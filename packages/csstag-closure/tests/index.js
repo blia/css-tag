@@ -3,11 +3,11 @@ import css from '../src';
 const pos = 'absolute';
 
 const testSheet = css`
-  .test-node {
+  div.test-node {
     display: flex;
     background-position: ${pos};
     color: ${props => props.color || 'red'};
-    &:hover {
+    :hover {
       text-decoration: underline;
     }
   }
@@ -17,7 +17,7 @@ const testNode = css`
   display: flex;
   background-position: ${pos};
   color: ${props => props.color || 'red'};
-  &:hover {
+  :hover {
     text-decoration: underline;
   }`;
 
