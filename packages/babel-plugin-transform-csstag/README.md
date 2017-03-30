@@ -1,6 +1,6 @@
 # babel-plugin-transform-csstag
 
-Compile css template strings to function tree
+[WIP] Compile css template strings to function tree
 
 ## Installation
 

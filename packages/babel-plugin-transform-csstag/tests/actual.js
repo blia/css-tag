@@ -6,10 +6,18 @@ const testSheet = css`
     color: ${props.active ? 'blue': 'red'};
     background-position: ${pos};
     active-color: red;
-    &:hover {
+    :hover {
       text-decoration: underline;
       active-color: black;
     }
+  }
+
+  div.button {
+    -bs-button: normal;
+  }
+
+  MyButton.red {
+    -module-foo: red;
   }
 `;
 
@@ -21,7 +29,9 @@ const testBlock = {
   color: ${props.active ? 'blue': 'red'};
   background-position: ${pos};
   active-color: red;
-  &:hover {
+  -bs-button: normal;
+  -module-foo: red;
+  :hover {
     text-decoration: underline;
     active-color: black;
   }`
