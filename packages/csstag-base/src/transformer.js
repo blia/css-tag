@@ -13,13 +13,30 @@ class Transformer {
     return {[this.prop(prop)]: this.value(value)};
   }
 
-  selector(selector) {
-    return selector;
+  // className(name) {
+  //   return name;
+  // }
+  //
+  // tagName(name) {
+  //   return name;
+  // }
+  //
+  // statusName(name) {
+  //   return name;
+  // }
+
+  selector(props) {
+    const {tagName, className, statusName} = props;
+
+    if (statusName) {
+      return `:${statusName}`;
+    }
+    return tagName ? `${tagName}.${className}`: className;
   }
 
   rule(props, children) {
-    return props && props.selector
-     ? {[this.selector(props.selector)]: Object.assign(...children)}
+    return props && (props.tagName || props.className || props.statusName)
+     ? {[this.selector(props)]: Object.assign(...children)}
      : Object.assign(...children);
   }
 
@@ -28,6 +45,7 @@ class Transformer {
   }
 
   transform(type, props, children) {
+    // console.log(type, props);
     switch (type) {
       case 'sheet':
         return this.sheet(props, children);
