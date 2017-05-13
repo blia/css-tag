@@ -1,77 +1,77 @@
-const testSheet = css('sheet', null, [css('rule', {
+const testSheet = css.sheet(null, [css.rule({
   className: 'test-node'
-}, [css('decl', {
+}, [css.decl({
   prop: 'display',
   value: 'flex'
-}), css('decl', {
+}), css.decl({
   prop: 'rect',
   value: '10px'
-}), css('decl', {
+}), css.decl({
   prop: 'content',
   value: data => data ? data.foo : 'default'
-}), css('decl', {
+}), css.decl({
   prop: 'color',
   value: props.active ? 'blue' : 'red'
-}), css('decl', {
+}), css.decl({
   prop: 'background-position',
   value: pos
-}), css('decl', {
+}), css.decl({
   prop: 'active-color',
   value: 'red'
-}), css('rule', {
+}), css.rule({
   statusName: 'hover'
-}, [css('decl', {
+}, [css.decl({
   prop: 'text-decoration',
   value: 'underline'
-}), css('decl', {
+}), css.decl({
   prop: 'active-color',
   value: 'black'
-})])]), css('rule', {
+})])]), css.rule({
   tagName: 'div',
   className: 'button'
-}, [css('decl', {
+}, [css.decl({
   ns: 'bs',
   prop: 'button',
   value: 'normal'
-})]), css('rule', {
+})]), css.rule({
   tagName: MyButton,
   className: 'red'
-}, [css('decl', {
+}, [css.decl({
   prop: foo,
   value: 'red'
 })])]);
 const testBlock = {
-  testNode: css('rule', null, [css('decl', {
+  testNode: css.rule(null, [css.decl({
     prop: 'display',
     value: 'flex'
-  }), css('decl', {
+  }), css.decl({
     prop: 'rect',
     value: '10px'
-  }), css('decl', {
+  }), css.decl({
     prop: 'content',
     value: data => data ? data.foo : 'default'
-  }), css('decl', {
+  }), css.decl({
     prop: 'color',
     value: props.active ? 'blue' : 'red'
-  }), css('decl', {
+  }), css.decl({
     prop: 'background-position',
     value: pos
-  }), css('decl', {
+  }), css.decl({
     prop: 'active-color',
     value: 'red'
-  }), css('decl', {
+  }), css.decl({
     ns: 'bs',
     prop: 'button',
     value: 'normal'
-  }), css('decl', {
+  }), css.decl({
     prop: foo,
     value: 'red'
-  }), css('rule', {
+  }), css.rule({
     statusName: 'hover'
-  }, [css('decl', {
+  }, [css.decl({
     prop: 'text-decoration',
     value: 'underline'
-  }), css('decl', {
+  }), css.decl({
     prop: 'active-color',
     value: 'black'
   })])])
