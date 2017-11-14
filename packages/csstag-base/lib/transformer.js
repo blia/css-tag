@@ -74,7 +74,6 @@ var Transformer = function () {
   }, {
     key: 'transform',
     value: function transform(type, props, children) {
-      console.log(type, props);
       switch (type) {
         case 'sheet':
           return this.sheet(props, children);

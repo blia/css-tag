@@ -16,7 +16,7 @@ const testSheet = css`
 const testNode = css`
   display: flex;
   background-position: ${pos};
-  color: ${props => props.color || 'red'};
+  color: rgba(${props => props.color || 'red'}, 0.5);
   :hover {
     text-decoration: underline;
   }`;

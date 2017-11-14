@@ -17,7 +17,7 @@ const testSheet = css`
   }
 
   MyButton.red {
-    -module-foo: red;
+    -foo: red;
   }
 `;
 
